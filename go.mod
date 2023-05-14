@@ -1,4 +1,4 @@
-module github.com/WagaoCarvalhoDev/go_finance
+module github.com/WagaoCarvalhoDev/gofinance-backend
 
 go 1.20
 

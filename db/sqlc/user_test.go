@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/WagaoCarvalhoDev/go_finance/util"
+	"github.com/WagaoCarvalhoDev/gofinance-backend/util"
 	"github.com/stretchr/testify/require"
 )
 
