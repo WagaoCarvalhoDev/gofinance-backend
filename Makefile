@@ -1,14 +1,14 @@
 createdb:
-  createdb --username=super_admin --owner=super_admin go_finance
+	createdb --username=super_admin --owner=super_admin go_finance
 
 postgres:
-  docker compose up
+	docker compose up
 
 migrateup:
-  migrate -path db/migration -database "postgresql://super_admin:SomeSecretPassword@localhost:5432/go_finance?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://super_admin:SomeSecretPassword@localhost:5432/go_finance?sslmode=disable" -verbose up
 
 migrationdrop:
-  migrate -path db/migration -database "postgresql://super_admin:SomeSecretPassword@localhost:5432/go_finance?sslmode=disable" -verbose drop
+	migrate -path db/migration -database "postgresql://super_admin:SomeSecretPassword@localhost:5432/go_finance?sslmode=disable" -verbose drop
 
 test:
 	go test -v -cover ./...
